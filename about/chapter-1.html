@@ -169,11 +169,61 @@
       *{scroll-behavior:auto!important;transition:none!important}
     }
   </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://divd.family/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Ecosystem",
+        "item": "https://divd.family/about/chapter-1.html"
+      }
+    ]
+  }
+  </script>
+  <style>
+    .breadcrumb {
+      padding: 0.5rem 0;
+      font-size: 0.88rem;
+      margin-bottom: 1rem;
+    }
+    .breadcrumb nav {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+    }
+    .breadcrumb a {
+      color: var(--brand-2);
+      text-decoration: none;
+    }
+    .breadcrumb a:hover {
+      text-decoration: underline;
+    }
+    .breadcrumb [aria-current="page"] {
+      color: var(--muted);
+      cursor: default;
+    }
+  </style>
 </head>
 <body>
 <a class="skip" href="#map">Skip to the family map</a>
 
 <header class="shell">
+  <div class="breadcrumb">
+    <nav aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <span aria-hidden="true">/</span>
+      <span aria-current="page">Ecosystem</span>
+    </nav>
+  </div>
   <span class="eyebrow">Chapter 1 · Welcome to the family</span>
   <h1>Different roles.<br>One shared mission.</h1>
   <p class="lede">Explore how researchers, responders, educators, communities, employers, funders and social-impact organisations work together to create a safer and more inclusive digital world.</p>
