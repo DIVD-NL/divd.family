@@ -22,6 +22,16 @@ The core values of [DIVD.fund](https://divd.fund/) are integrity, connectivity a
 ## DIVD works
 [DIVD.works](https://divd.works/) DIVD Works is a platform that connects employers with job seekers by providing tailored solutions designed to meet the unique needs of both parties in today’s digital job market. The organization focuses on developing young professionals by equipping them with modern digital skills, enabling individuals to reach their potential while giving companies access to a pool of capable, job-ready candidates. Through strategic matchmaking and customized support, DIVD Works aims to bridge the gap between talent and demand, fostering partnerships that promote long-term career growth and contributing to the evolving landscape of work.
 
+## RSS updates
+
+Each organisation card can display its latest news item through the `data-rss` attribute on the article in `index.html`:
+
+```html
+<article class="org" id="organisation" data-rss="https://example.org/feed/">
+```
+
+The shared script in `js/code.js` fetches the feed and displays the newest title, link, and publication date. Feeds that are empty or unavailable show a fallback message without affecting the rest of the page.
+
 
 
 
